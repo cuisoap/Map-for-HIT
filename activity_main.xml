@@ -1,0 +1,59 @@
+<RelativeLayout
+    android:layout_width="fill_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+      android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bg"
+        android:textColor="#4F4F4F"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="工大地图导航"/>
+    
+<com.baidu.mapapi.map.MapView  
+    android:id="@+id/bmapView"  
+    android:layout_below="@id/title"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    
+    android:clickable="true" />
+<WebView
+    android:id="@+id/webview"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="20dp"/>
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="地图样式"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="90dip"/>
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="周边搜索"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="150dip"/>
+<Button
+    android:id="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="路线导航" 
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="210dip"/>
+</RelativeLayout>
